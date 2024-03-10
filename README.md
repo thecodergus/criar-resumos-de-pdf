@@ -11,6 +11,7 @@ Para utilizar este projeto, siga os passos abaixo:
 2. Crie um arquivo `.env` na raiz do projeto e adicione suas chaves de acesso à API do OpenAI:
     
     OPENAI_API_KEY="sua chave de acesso à API do OpenAI"
+    
     MODEL_NAME="nome do modelo desejado"
     
 3. Coloque os arquivos PDF que deseja resumir na pasta `pdfs`.
