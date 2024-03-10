@@ -9,7 +9,9 @@ Para utilizar este projeto, siga os passos abaixo:
 
 1. Instale as dependências necessárias executando `pip install -r requirements.txt` no terminal.
 2. Crie um arquivo `.env` na raiz do projeto e adicione suas chaves de acesso à API do OpenAI:
+    
     OPENAI_API_KEY="sua chave de acesso à API do OpenAI"
     MODEL_NAME="nome do modelo desejado"
+    
 3. Coloque os arquivos PDF que deseja resumir na pasta `pdfs`.
 4. Execute o programa com `python main.py`. Os resumos serão salvos na pasta `resumos` em arquivos TXT separados.
