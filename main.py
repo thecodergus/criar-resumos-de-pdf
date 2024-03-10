@@ -1,5 +1,5 @@
 from langchain.chains.summarize import load_summarize_chain
-from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain_openai import ChatOpenAI
 from dataclasses import dataclass
 from dotenv import load_dotenv
