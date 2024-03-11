@@ -4,6 +4,7 @@ from langchain_openai import ChatOpenAI
 from dataclasses import dataclass
 from dotenv import load_dotenv
 import glob, os, time
+from tqdm import tqdm
 
 load_dotenv()
 llm = ChatOpenAI(
@@ -22,9 +23,7 @@ def resumir_texto(texto: str) -> str:
 
 def executar_programa(enderecos_pdf: list[str]) -> None:
     artigos = []
-    for i in enderecos_pdf:
-        print(f"Processando {a.titulo}...")
-
+    for i in tqdm(enderecos_pdf):
         a = Artigo(i)
 
         artigos.append(a)
